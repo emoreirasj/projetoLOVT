@@ -16,11 +16,12 @@ header {
     margin-bottom: 10px;
     height: 49px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    display: flex;
 }
+
 h1 {
     margin-left: 5%;
     margin-top: 0.5%;
-    display: inline-block;
 }
 
 
@@ -28,13 +29,13 @@ h4 {
     font-size: 10px;
     margin-left: 2px;
     margin-top: 1%;
-    display: inline-block;
+    
 }
 
 h2 {
-    margin-left: 70vw;
     margin-top: 0.5%;
-    display: inline-block;
+    margin-left: 75%;
+
 }
 
 .banner {
@@ -45,13 +46,15 @@ h2 {
     width: 90%;
 }
 
+.boxes {
+    display: flex;
+    justify-content: space-around;
+}
 
 .box1 {
     width: 256px;
     height: 242px;
     background-color: #eeeeee;
-    margin: 5%;
-    float: left;
 }
 
 .imagebox1 {
@@ -62,8 +65,7 @@ h2 {
     width: 256px;
     height: 242px;
     background-color: #eeeeee;
-    margin: 5%;
-    float: right
+
 }
 
 .imagebox2 {
@@ -71,13 +73,13 @@ h2 {
 }
 
 .boxdetail {
-    display: inline-block;
-    color: #888888;
-    font-size: 25px;
-    
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+
 }
 
-.rightnew{
+.rightnew {
     width: 56px;
     height: 21px;
     font-weight: 400;
@@ -87,9 +89,7 @@ h2 {
     color: #FFFFFF;
     background: #51D275;
     border-radius: 10.5px;
-    margin-left: 250%;
-    margin-top: 6%;
-   
+
 }
 
 .rightsale {
@@ -102,8 +102,6 @@ h2 {
     color: #FFFFFF;
     background: #dc9730;
     border-radius: 10.5px;
-    margin-left: 240%;
-    margin-top: 6%;
 }
 
 .description {
@@ -118,7 +116,7 @@ h2 {
 .left {
     float: left;
     margin: 0;
-    
+
 }
 
 .right {
@@ -131,49 +129,53 @@ h2 {
 
 .rectangle {
     clear: both;
-    width: 90%;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .rectangletext1 {
-    width: 266px;
+    width: 100%;
     height: 33px;
     font-size: 25px;
     text-align: center;
     color: #888888;
-    float: clear;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 10 auto;
 }
 
-.containerInd{
-    width: 608px;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
+.containerInd {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.containerModern{
-    width: 608px;
-    margin-left: auto;
-    margin-right: auto;
+.containerModern {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.containerClassic{
-    width: 608px;
-    margin-left: auto;
-    margin-right: auto;
+.containerClassic {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.containerImg{
+.containerImg {
     filter: opacity(60%);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    width: 100%;
+    margin: 10px;
 }
 
 .rectangletext {
@@ -181,11 +183,6 @@ h2 {
     text-align: center;
     color: black;
     position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    width: 608px;
-    height: 80px;
-    margin-top: 30px;
 }
 
 footer {
@@ -197,6 +194,8 @@ footer {
     color: #FFFFFF;
     font-size: 12px;
     text-align: justify;
+    display: flex;
+    justify-content: space-around;
 
 }
 
@@ -205,7 +204,7 @@ footer {
     height: 95px;
     margin-left: auto;
     margin-right: auto;
-    
+
 }
 
 .social {
@@ -231,5 +230,5 @@ footer {
     margin-left: 0;
     margin-right: 5%;
     margin-top: 5px;
- clear: both;
+    clear: both;
 }
